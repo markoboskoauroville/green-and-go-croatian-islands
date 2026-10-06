@@ -9,3 +9,9 @@ Word for word:
 Read as: Svemir is Svemir Vranko (LinkedIn); the organisation is trazilica.hr/tvrtka/421729. Generate the seven images in Gemini through Chrome, download them, build the page, make the repo public, deploy the page (Cloudflare Pages like djmantra).
 
 **Status:** done 6.10.2026. Page built with all seven images, repo public, GitHub Pages (Cloudflare key not readable this session). WhatsApp to Svemir drafted in HANDOVER, not sent.
+
+## 6.10.2026, v2: the letter off the page
+
+> the message to swimmer should be written in a code box here, not in a website. Website is just focusing on pitching the idea and visualizing the idea, which it is right now. So please remove the message and write it here
+
+**Status:** done 6.10.2026. Letter, greeting and signature removed from the page, prose made neutral; the message to Svemir given in the chat.

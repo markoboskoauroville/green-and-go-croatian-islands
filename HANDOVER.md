@@ -23,9 +23,9 @@ download button saved nothing, so each image was laid over the page at its natur
 **Not done:** Cloudflare Pages (the session could not read the Cloudflare key; GitHub Pages is used instead). The WhatsApp
 message to Svemir (draft below, not sent). Island list, e-moped law, sponsor programmes still unverified.
 
-**Draft WhatsApp to Svemir (Marko sends it himself):**
-Bok Svemire, jutros sam imao jednu ideju za GreenerGo i odmah sam je složio u malu stranicu da ti mogu pokazati. Električni
-skuteri na otocima, iz obnovljenih kontejnera. Pogledaj kad stigneš, pa mi reci što misliš: https://markoboskoauroville.github.io/green-and-go-croatian-islands/
+**The page pitches and shows the idea only** (Marko, 6.10.2026: "Website is just focusing on pitching the idea and
+visualizing the idea"). No letter, no greeting, no signature on it. The personal message to Svemir is given to Marko in the
+chat, in a code box, and he sends it himself.
 
 ---
 
