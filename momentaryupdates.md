@@ -21,3 +21,9 @@ Read as: Svemir is Svemir Vranko (LinkedIn); the organisation is trazilica.hr/tv
 > remove this sentence Sve su to prijedlozi i ništa još nije odlučeno.
 
 **Status:** done 6.10.2026.
+
+## 6.10.2026, v4
+
+> remove this sentence Nikoga još nisam kontaktirao.
+
+**Status:** done 6.10.2026 (it read "Nitko još nije kontaktiran." after v2).
