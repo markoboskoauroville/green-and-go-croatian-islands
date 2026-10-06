@@ -48,5 +48,5 @@ Read as: the round "Tema" button top left was the light and dark switch. Removed
 
 > Semer is not interested in this Green and Go project, so please reformat this project and present it as a child project from my Kuklica Eco Oasis project presented on my own website. And also, I have my own bunya images which are not copyrighted. Please include them. I'm sending you a link here. https://photos.app.goo.gl/SBrjCpU7vZ7Ht5QT7
 
-1. Svemir is not interested: the page is reworked as a child project of Kukljica EcoOasis, presented on his own website. **Status:** waiting (DJ Mantra player first).
-2. His own bunya images (not copyrighted) from the Google Photos album go on the page. **Status:** waiting.
+1. Svemir is not interested: the page is reworked as a child project of Kukljica EcoOasis, presented on his own website. **Status:** done, v7: the kicker and meta say "Projekt Kukljica EcoOasis" (no GreenerGo), a new section "Sunce na kamenom krovu" ties it to the bunja, links back; Kukljica EcoOasis v3 has a "Projekt izdanak" section pointing here.
+2. His own bunya images (not copyrighted) from the Google Photos album go on the page. **Status:** done: album "Brac-5/27/14" (37 photos, 27.5.2014); six bunje in the Kukljica bunja section as a real gallery next to the six visualisations, the solar bunja here and in the child section. Left out: a business card, a photo with people, a price list, maps, ferry timetables.
