@@ -1,6 +1,31 @@
 # HANDOVER — Green and Go Croatian Islands
 
-Written 6.10.2026 by a Claude chat that did research only. Rewrite this file as the project moves, do not append a log to it.
+Rewritten 6.10.2026 by the Claude Code session that built v1. Rewrite this file as the project moves, do not append a log to it.
+
+## Where it stands, 6.10.2026
+
+**v1 is built and public.** The pitch page is `docs/index.html` with seven Gemini (Nano Banana) images in `docs/images/`,
+served by GitHub Pages at https://markoboskoauroville.github.io/green-and-go-croatian-islands/ . The repository was
+made public on Marko's word ("make this repo public"), after a history scan by shape: 2 commits, 0 keys.
+
+**Facts found this session.**
+- Svemir is **Svemir Vranko**, Zagreb, coach (Amarya Coaching School, self employed), LinkedIn linkedin.com/in/svemir-vranko.
+- trazilica.hr/tvrtka/421729 is **Greenergo, obrt za prijevoz, usluge i trgovinu**, Zagreb, MB 98731963, founded 20.03.2024,
+  status **Odjava** (deregistered, archived record). It is a craft (obrt), not an udruga. So the page says "GreenerGo" and never
+  "udruga". Ask Marko whether a new udruga exists or is planned.
+
+**Choices made without asking (change in one word):** seated e-mopeds as the main fleet, kick scooters as an extra in town;
+40 ft container as a proposal; Ugljan (Kukljica) as the first pilot; signed "Marko"; palette sea blue, pine green, stone white.
+
+**How the images were made:** Chrome with Gemini logged in, one chat, the prompts from `NANO_BANANA_PROMPTS.md`. Gemini's
+download button saved nothing, so each image was laid over the page at its natural 1024x572 and captured pixel exact.
+
+**Not done:** Cloudflare Pages (the session could not read the Cloudflare key; GitHub Pages is used instead). The WhatsApp
+message to Svemir (draft below, not sent). Island list, e-moped law, sponsor programmes still unverified.
+
+**Draft WhatsApp to Svemir (Marko sends it himself):**
+Bok Svemire, jutros sam imao jednu ideju za GreenerGo i odmah sam je složio u malu stranicu da ti mogu pokazati. Električni
+skuteri na otocima, iz obnovljenih kontejnera. Pogledaj kad stigneš, pa mi reci što misliš: https://markoboskoauroville.github.io/green-and-go-croatian-islands/
 
 ---
 

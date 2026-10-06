@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="hr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Green and Go Croatian Islands</title>
+<meta name="description" content="Električni skuteri na hrvatskim otocima, iz obnovljenih brodskih kontejnera. Prijedlog za GreenerGo.">
+<meta property="og:title" content="Green and Go Croatian Islands">
+<meta property="og:description" content="Jedan kontejner na svakom otoku do kojeg se može doći autom. Prijedlog za GreenerGo.">
+<meta property="og:image" content="images/01_hero.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f2ea; --paper:#fffdf8; --ink:#1d2622; --soft:#4b5a53;
+  --pine:#2f6b4f; --pine-2:#245a41; --sea:#1f6f8b; --stone:#e9e2d4; --line:#d9d0bf;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0f1714; --paper:#16211d; --ink:#eef1ec; --soft:#b7c3bc;
+    --pine:#7cc39d; --pine-2:#9ad3b3; --sea:#7fc4dc; --stone:#1c2a25; --line:#2a3a33;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0f1714; --paper:#16211d; --ink:#eef1ec; --soft:#b7c3bc;
+  --pine:#7cc39d; --pine-2:#9ad3b3; --sea:#7fc4dc; --stone:#1c2a25; --line:#2a3a33;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:400 21px/1.6 "Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif}
+img{display:block;width:100%;height:auto}
+.hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;overflow:hidden;background:#123}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(8,20,16,0) 35%,rgba(8,20,16,.82) 100%)}
+.hero .t{position:relative;z-index:1;padding:0 20px 44px;max-width:900px;margin:0 auto;width:100%;color:#fff}
+.kicker{font-size:.8em;letter-spacing:.14em;text-transform:uppercase;opacity:.9;margin:0 0 10px}
+h1{font-family:Fraunces,Georgia,serif;font-weight:650;font-size:clamp(2.4rem,8vw,4.6rem);line-height:1.02;margin:0 0 14px}
+.hero .sub{font-size:1.1em;max-width:34em;margin:0;opacity:.95}
+main{max-width:760px;margin:0 auto;padding:0 20px}
+section{padding:56px 0 8px}
+h2{font-family:Fraunces,Georgia,serif;font-weight:650;color:var(--pine);font-size:clamp(1.7rem,5vw,2.3rem);line-height:1.15;margin:0 0 18px}
+p{margin:0 0 1.05em}
+.letter{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:30px 24px;margin-top:-40px;position:relative;z-index:2;
+  box-shadow:0 10px 30px rgba(0,0,0,.08)}
+.letter .hi{font-family:Fraunces,Georgia,serif;font-size:1.35em;margin-bottom:.6em}
+figure{margin:28px -20px 8px}
+figure img{border-radius:0}
+@media (min-width:800px){figure{margin:32px -60px 8px} figure img{border-radius:16px}}
+figcaption{font-size:.78em;color:var(--soft);padding:8px 20px 0}
+.ph{aspect-ratio:16/9;background:var(--stone);border:2px dashed var(--line);display:flex;align-items:center;justify-content:center;
+  color:var(--soft);font-size:.85em;text-align:center;padding:20px}
+.islands{background:var(--stone);border-radius:14px;padding:18px 20px;margin:0 0 1.05em}
+.islands b{color:var(--sea);font-weight:600}
+.money{border-left:4px solid var(--pine);padding:2px 0 2px 18px;margin:0 0 1.2em}
+.money h3{margin:0 0 6px;font-size:1.05em;color:var(--pine-2)}
+.note{font-size:.82em;color:var(--soft)}
+.sign{font-family:Fraunces,Georgia,serif;font-size:1.4em;margin-top:.4em}
+footer{max-width:760px;margin:40px auto 0;padding:28px 20px 48px;border-top:1px solid var(--line);color:var(--soft);font-size:.85em}
+footer a{color:var(--sea)}
+.theme{position:fixed;top:12px;right:12px;z-index:5;border:0;border-radius:999px;padding:10px 14px;font:600 15px "Source Sans 3",sans-serif;
+  background:rgba(0,0,0,.45);color:#fff;cursor:pointer;backdrop-filter:blur(6px)}
+@media (prefers-reduced-motion:no-preference){ .hero img{animation:drift 30s ease-in-out infinite alternate} }
+@keyframes drift{from{transform:scale(1.02)}to{transform:scale(1.08)}}
+</style>
+</head>
+<body>
+<button class="theme" id="theme" aria-label="Svijetla ili tamna tema">Tema</button>
+
+<header class="hero">
+  <img src="images/01_hero.jpg" alt="Obnovljeni zeleni kontejner s električnim skuterima na otoku, uz more i kamene kuće">
+  <div class="t">
+    <p class="kicker">Prijedlog za GreenerGo</p>
+    <h1>Green and Go<br>Croatian Islands</h1>
+    <p class="sub">Električni skuteri na hrvatskim otocima, iz obnovljenih brodskih kontejnera. Jedan kontejner na svakom otoku do kojeg se može doći autom.</p>
+  </div>
+</header>
+
+<main>
+  <section class="letter">
+    <p class="hi">Dragi Svemire,</p>
+    <p>jutros sam imao viziju za GreenerGo i htio sam ti je odmah zapisati dok je još svježa.</p>
+    <p>Ideja je jednostavna. Uzmemo nekoliko starih brodskih kontejnera, obnovimo ih i od svakog napravimo mali ured za najam električnih skutera. Na svaki hrvatski otok do kojeg se može doći autom, trajektom ili preko mosta, u sezoni dođe po jedan takav kontejner. Ljudi unajme skuter i voze se po otoku bez buke i bez benzina.</p>
+    <p>Zovem to Green and Go Croatian Islands. Ostavio sam ime na engleskom jer ga turisti odmah razumiju, a meni se sviđa kako zvuči.</p>
+  </section>
+
+  <section>
+    <h2>Jedan kontejner radi četiri posla</h2>
+    <p>Kontejner je punionica, skladište za skutere i ured u isto vrijeme. Unutra ima klimu, pa osoba koja radi najam može cijeli dan sjediti u hladu, izdavati skutere i pratiti gdje se koji nalazi. Navečer se skuteri pune na utičnicama uz zid kontejnera i ujutro su spremni.</p>
+    <p>Zamišljam kontejner od 40 stopa s velikim prozorom kroz koji se izdaje skuter, tendom i malom drvenom terasom ispred. Solarni paneli na krovu bili bi lijep dodatak. Sve su to prijedlozi i ništa još nije odlučeno.</p>
+    <figure>
+      <img src="images/03_interior.jpg" alt="Unutrašnjost kontejnera: stol s laptopom, police s kacigama, punjači baterija i klima" loading="lazy">
+      <figcaption>Unutra su stol, klima, kacige i punjači za baterije.</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>Kamion, trajekt i utičnica</h2>
+    <p>Logistika je stvarno jednostavna. Kamion natovari kontejner, ukrca se na trajekt ili prijeđe most i spusti ga negdje gdje ima struje. Priključimo ga, skuteri se napune i najam može početi isti dan.</p>
+    <p>Kad sezona završi, kamion ga odveze natrag ili na drugo mjesto. Ne gradimo ništa, kontejner dođe i ode, a otok ostane kakav je bio.</p>
+    <figure>
+      <img src="images/02_ferry.jpg" alt="Kamion sa zelenim kontejnerom silazi s trajekta na kameni mol malog otočkog mjesta" loading="lazy">
+      <figcaption>Kontejner putuje istim trajektom kao i turisti.</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>Jedan otok, jedan kontejner</h2>
+    <p>Mjerilo je jasno. Ako se na otok može doći autom, tamo ide jedan kontejner.</p>
+    <div class="islands">
+      <p><b>Preko mosta</b><br>Krk, Pag, Čiovo, Murter, Vir i Pašman</p>
+      <p style="margin:0"><b>Trajektom</b><br>Cres i Lošinj, Rab, Ugljan, Dugi otok, Iž, Brač, Hvar, Šolta, Vis, Korčula, Lastovo i Mljet</p>
+    </div>
+    <p>To je skoro dvadeset otoka uz cijelu obalu. Popis još moram provjeriti s trenutnim linijama Jadrolinije za aute.</p>
+    <figure id="map">
+      <img src="images/05_map.jpg" alt="Karta Jadrana sa zelenim kontejnerima na otocima i trajektnim linijama" loading="lazy">
+    </figure>
+  </section>
+
+  <section>
+    <h2>Otok na dva kotača</h2>
+    <p>Mislim na električne skutere na kojima se sjedi, jer se po otoku vozi otvorenom cestom od mjesta do mjesta. Romobili bi mogli doći kao dodatak za kratke vožnje po samom mjestu.</p>
+    <p>Svaki skuter ima GPS, pa u kontejneru znamo gdje je, koliko mu je baterije ostalo i je li netko zapeo na cesti. To je sigurnost za ljude i za flotu, a radi se po GDPR pravilima.</p>
+    <p>Za turista to znači da siđe s trajekta bez auta, uzme skuter i vidi otok onako kako ga mi poznajemo. Uvale i maslinike i ono malo selo gore u brdu do kojeg autobus ne ide.</p>
+    <figure id="ride">
+      <img src="images/04_riders.jpg" alt="Dvoje ljudi vozi električne skutere obalnom cestom pokraj maslinika i suhozida" loading="lazy">
+    </figure>
+  </section>
+
+  <section>
+    <h2>Zeleno i komercijalno u isto vrijeme</h2>
+    <p>Projekt se plaća s tri strane i zato mislim da može trajati godinama, a ne samo jedno ljeto.</p>
+    <div class="money">
+      <h3>Najam</h3>
+      <p>U sezoni su otoci puni ljudi koji bi rado ostavili auto i maknuli se od gužve. Najam skutera je prihod od prvog dana.</p>
+    </div>
+    <div class="money">
+      <h3>Sponzori</h3>
+      <p>Proizvođač skutera dobije svoje ime na kontejnerima i skuterima na skoro dvadeset otoka, pred stotinama tisuća turista svako ljeto. Zauzvrat mi dobijemo flotu besplatno ili puno jeftinije. Prvo bih pitao europske proizvođače kao što su Silence, Askoll, Vespa Elettrica, Govecs i Kumpan. Od domaćih mi se čine prirodni Greyp, HEP s mrežom punionica ELEN, Jadrolinija čijim bi trajektima kontejneri putovali i Hrvatski Telekom za GPS vezu. Nikoga još nisam kontaktirao.</p>
+    </div>
+    <div class="money">
+      <h3>Javni novac za manje CO2</h3>
+      <p>Fond za zaštitu okoliša i energetsku učinkovitost najavio je za ovu jesen poziv od oko 20 milijuna eura za energetski učinkovita vozila i male punionice. EU program LIFE svake godine ima poziv za klimu, pa bi 2027. bila realna godina za prijavu. Tu je i europska inicijativa Clean Energy for EU Islands, a Pokret otoka im je partner u Hrvatskoj i mogao bi nam otvoriti vrata. Treba još provjeriti tko se sve smije javiti na koji poziv.</p>
+    </div>
+    <figure id="sponsor">
+      <img src="images/06_sponsor.jpg" alt="Bočni zid kontejnera s tri prazne ploče za sponzore i skuterima ispred" loading="lazy">
+      <figcaption>Prazne ploče čekaju sponzora.</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>Kako bih počeo</h2>
+    <p>Počeo bih s jednim kontejnerom na jednom otoku, da vidimo kako to radi u stvarnosti prije nego krenemo dalje. Meni je prirodan Ugljan, Kukljica, jer tamo poznajem teren i ljude koji bi nam pomogli.</p>
+    <p>Prvo bi trebalo naći rabljeni kontejner i mjesto sa strujom, razgovarati s općinom i pitati jednog proizvođača bi li nam dao skutere za probnu sezonu. Ako to ljeto prođe dobro, sljedeće godine idemo na više otoka.</p>
+  </section>
+
+  <section>
+    <figure id="evening" style="margin-top:0">
+      <img src="images/07_evening.jpg" alt="Kontejner navečer, svjetla u prozoru i skuteri na punjenju uz zalazak sunca" loading="lazy">
+    </figure>
+    <p>Znam da je ovo puno odjednom i da imaš svoje planove. Ako ti se ne sviđa ili trenutno nemaš vremena, slobodno mi reci i nema nikakve ljutnje.</p>
+    <p>Ali ja bih jako volio da ovo napravimo zajedno. Ako ti se ideja čini dobra, nađimo se ovaj tjedan na kavi pa je prođemo od početka do kraja.</p>
+    <p class="sign">Pozdrav,<br>Marko</p>
+  </section>
+</main>
+
+<footer>
+  Marko Boško, Mantra Productions<br>
+  <a href="mailto:marko.bosko@auroville.community">marko.bosko@auroville.community</a><br>
+  <span class="note">Brojke o fondovima su iz javnih objava iz 2026. Popis otoka i sponzora je prijedlog i još se provjerava. Slike su ilustracije.</span>
+</footer>
+
+<script>
+(function(){
+  var r=document.documentElement,b=document.getElementById('theme');
+  try{var s=localStorage.getItem('gg-theme'); if(s) r.setAttribute('data-theme',s);}catch(e){}
+  b.addEventListener('click',function(){
+    var dark=r.getAttribute('data-theme')?r.getAttribute('data-theme')==='dark':matchMedia('(prefers-color-scheme: dark)').matches;
+    var n=dark?'light':'dark'; r.setAttribute('data-theme',n);
+    try{localStorage.setItem('gg-theme',n);}catch(e){}
+  });
+  document.querySelectorAll('figure img').forEach(function(i){
+    i.addEventListener('error',function(){
+      var d=document.createElement('div'); d.className='ph';
+      d.textContent='Slika '+i.getAttribute('src').split('/').pop()+' dolazi uskoro';
+      i.replaceWith(d);
+    });
+  });
+})();
+</script>
+</body>
+</html>

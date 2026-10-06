@@ -1,16 +1,15 @@
 # Green and Go Croatian Islands
 
-Pitch for the NGO GreenerGo: electric scooters for rent on Croatian islands, run out of renovated shipping containers.
+Pitch for GreenerGo: electric scooters for rent on Croatian islands, run out of renovated shipping containers.
+One container on every island you can reach by car, in the season.
 
-Idea and direction: Baba (Marko Boško), Mantra Productions.
-Pitch addressed to: Svemir, president of GreenerGo.
+Idea and direction: Marko Boško (Baba), Mantra Productions. Pitch addressed to Svemir Vranko.
 
-Status 6.10.2026: research and handover only. Nothing is built yet.
+**Live page:** https://markoboskoauroville.github.io/green-and-go-croatian-islands/
 
-Reading order for any new chat:
+Status 6.10.2026: v1 built and public. The page is `docs/index.html`, the images `docs/images/` (made in Gemini from
+`NANO_BANANA_PROMPTS.md`). GitHub Pages serves `docs/` from `main`.
 
-1. `HANDOVER.md` — the full brief, the idea in Baba's words, the interpretation, the rules, the next steps.
-2. `RESEARCH.md` — funding, sponsors, islands, open facts to verify.
-3. `NANO_BANANA_PROMPTS.md` — image prompts. Baba generates the images and uploads them.
+Reading order for any new chat: `HANDOVER.md`, `RESEARCH.md`, `NANO_BANANA_PROMPTS.md`, `momentaryupdates.md`.
 
-No secrets live in this repository. The GitHub token is attached to the chat as a file and handled as described in `HANDOVER.md` section 9.
+No secrets live in this repository.
