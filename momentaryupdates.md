@@ -43,3 +43,10 @@ Word for word:
 Read as: the round "Tema" button top left was the light and dark switch. Removed the button, its style and its script. The page now follows the phone's own light or dark setting, and any theme saved by the old button is cleared on load.
 
 **Status:** done 6.10.2026.
+
+## 6.10.2026, 09:25
+
+> Semer is not interested in this Green and Go project, so please reformat this project and present it as a child project from my Kuklica Eco Oasis project presented on my own website. And also, I have my own bunya images which are not copyrighted. Please include them. I'm sending you a link here. https://photos.app.goo.gl/SBrjCpU7vZ7Ht5QT7
+
+1. Svemir is not interested: the page is reworked as a child project of Kukljica EcoOasis, presented on his own website. **Status:** waiting (DJ Mantra player first).
+2. His own bunya images (not copyrighted) from the Google Photos album go on the page. **Status:** waiting.
