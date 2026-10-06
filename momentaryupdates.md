@@ -33,3 +33,13 @@ Read as: Svemir is Svemir Vranko (LinkedIn); the organisation is trazilica.hr/tv
 > this is already standard in my web pages. They're all dual language, English and Croatian, with a small toggle top right corner, as in all my other web pages. Please make it
 
 **Status:** done 6.10.2026. HR and EN for every block, HR/EN toggle top right (mantra_lang, as on djmantra), theme button moved top left.
+
+## 6.10.2026, v6: the Tema button out
+
+Word for word:
+
+> There is a bug in the website. There is some blob tema which is always at the top. I don't know what that is, and please remove it.
+
+Read as: the round "Tema" button top left was the light and dark switch. Removed the button, its style and its script. The page now follows the phone's own light or dark setting, and any theme saved by the old button is cleared on load.
+
+**Status:** done 6.10.2026.

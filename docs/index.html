@@ -64,14 +64,11 @@ html[lang="hr"] .en, html[lang="en"] .hr{display:none}
 .lang{position:fixed;top:12px;right:12px;z-index:6;display:flex;border-radius:999px;overflow:hidden;background:rgba(0,0,0,.45);backdrop-filter:blur(6px)}
 .lang button{border:0;background:transparent;color:#fff;font:600 14px "Source Sans 3",sans-serif;letter-spacing:.12em;padding:10px 14px;cursor:pointer}
 .lang button[aria-pressed="true"]{background:#2f6b4f;color:#fff}
-.theme{position:fixed;top:12px;left:12px;z-index:5;border:0;border-radius:999px;padding:10px 14px;font:600 15px "Source Sans 3",sans-serif;
-  background:rgba(0,0,0,.45);color:#fff;cursor:pointer;backdrop-filter:blur(6px)}
 @media (prefers-reduced-motion:no-preference){ .hero img{animation:drift 30s ease-in-out infinite alternate} }
 @keyframes drift{from{transform:scale(1.02)}to{transform:scale(1.08)}}
 </style>
 </head>
 <body>
-<button class="theme" id="theme" aria-label="Svijetla ili tamna tema / Light or dark"><span class="hr">Tema</span><span class="en">Theme</span></button>
 <div class="lang" role="group" aria-label="Jezik / Language">
   <button type="button" data-lang="hr" aria-pressed="true">HR</button>
   <button type="button" data-lang="en" aria-pressed="false">EN</button>
@@ -179,7 +176,7 @@ html[lang="hr"] .en, html[lang="en"] .hr{display:none}
 
 <script>
 (function(){
-  var r=document.documentElement,b=document.getElementById('theme');
+  var r=document.documentElement;
   function setLang(l,save){
     r.lang=l;
     document.querySelectorAll('.lang button').forEach(function(x){x.setAttribute('aria-pressed',x.dataset.lang===l?'true':'false');});
@@ -189,12 +186,7 @@ html[lang="hr"] .en, html[lang="en"] .hr{display:none}
   if(L!=='hr'&&L!=='en'){var m=document.cookie.match(/(?:^|;\s*)mantra_lang=(hr|en)/); L=m?m[1]:'hr';}
   setLang(L,false);
   document.querySelectorAll('.lang button').forEach(function(x){x.addEventListener('click',function(){setLang(x.dataset.lang,true);});});
-  try{var s=localStorage.getItem('gg-theme'); if(s) r.setAttribute('data-theme',s);}catch(e){}
-  b.addEventListener('click',function(){
-    var dark=r.getAttribute('data-theme')?r.getAttribute('data-theme')==='dark':matchMedia('(prefers-color-scheme: dark)').matches;
-    var n=dark?'light':'dark'; r.setAttribute('data-theme',n);
-    try{localStorage.setItem('gg-theme',n);}catch(e){}
-  });
+  try{localStorage.removeItem('gg-theme');}catch(e){}
   document.querySelectorAll('figure img').forEach(function(i){
     i.addEventListener('error',function(){
       var d=document.createElement('div'); d.className='ph';

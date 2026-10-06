@@ -4,7 +4,7 @@ Rewritten 6.10.2026 by the Claude Code session that built v1. Rewrite this file 
 
 ## Where it stands, 6.10.2026
 
-**v5 is built and public, Croatian and English with the HR/EN toggle top right.** The pitch page is `docs/index.html` with seven Gemini (Nano Banana) images in `docs/images/`,
+**v6 is built and public, Croatian and English with the HR/EN toggle top right. No theme button: light or dark follows the phone setting.** The pitch page is `docs/index.html` with seven Gemini (Nano Banana) images in `docs/images/`,
 served by GitHub Pages at https://markoboskoauroville.github.io/green-and-go-croatian-islands/ . The repository was
 made public on Marko's word ("make this repo public"), after a history scan by shape: 2 commits, 0 keys.
 
