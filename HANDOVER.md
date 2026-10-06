@@ -130,13 +130,13 @@ The manifest design language is amber on near-black. For a green island project,
 
 ---
 
-## 7. Open questions for Baba (ask them together, short, at the start of the next chat)
+## 7. Open questions for Baba (as of 6.10.2026, closing the chat)
 
-1. Is "Sven Mir" Svemir Vranko, and is it "ti"?
-2. GreenerGo: website, Instagram, OIB or exact registered name?
-3. Seated e-mopeds, kick scooters, or both?
-4. Container size, 20 ft or 40 ft, and how many in year one?
-5. Delivery: Cloudflare Pages like djmantra, or a claude.ai artifact link?
+1. GreenerGo: the registry shows only a closed obrt (Greenergo, MB 98731963, Odjava). Is there a new udruga, or one planned? Its name, OIB, website.
+2. Seated e-mopeds, kick scooters, or both? (The page says seated, kick scooters as an extra.)
+3. Container size, 20 ft or 40 ft (the page says 40), and how many in year one.
+4. Cloudflare Pages instead of GitHub Pages? Needs the Cloudflare key readable in the session.
+5. Did the message to Svemir go out, and what did he say.
 
 ---
 
