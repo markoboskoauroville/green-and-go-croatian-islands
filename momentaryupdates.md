@@ -15,3 +15,9 @@ Read as: Svemir is Svemir Vranko (LinkedIn); the organisation is trazilica.hr/tv
 > the message to swimmer should be written in a code box here, not in a website. Website is just focusing on pitching the idea and visualizing the idea, which it is right now. So please remove the message and write it here
 
 **Status:** done 6.10.2026. Letter, greeting and signature removed from the page, prose made neutral; the message to Svemir given in the chat.
+
+## 6.10.2026, v3
+
+> remove this sentence Sve su to prijedlozi i ništa još nije odlučeno.
+
+**Status:** done 6.10.2026.
