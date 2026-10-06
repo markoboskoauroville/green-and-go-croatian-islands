@@ -27,3 +27,9 @@ Read as: Svemir is Svemir Vranko (LinkedIn); the organisation is trazilica.hr/tv
 > remove this sentence Nikoga još nisam kontaktirao.
 
 **Status:** done 6.10.2026 (it read "Nitko još nije kontaktiran." after v2).
+
+## 6.10.2026, v5: two languages
+
+> this is already standard in my web pages. They're all dual language, English and Croatian, with a small toggle top right corner, as in all my other web pages. Please make it
+
+**Status:** done 6.10.2026. HR and EN for every block, HR/EN toggle top right (mantra_lang, as on djmantra), theme button moved top left.

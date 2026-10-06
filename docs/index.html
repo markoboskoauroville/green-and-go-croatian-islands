@@ -60,118 +60,135 @@ figcaption{font-size:.78em;color:var(--soft);padding:8px 20px 0}
 .sign{font-family:Fraunces,Georgia,serif;font-size:1.4em;margin-top:.4em}
 footer{max-width:760px;margin:40px auto 0;padding:28px 20px 48px;border-top:1px solid var(--line);color:var(--soft);font-size:.85em}
 footer a{color:var(--sea)}
-.theme{position:fixed;top:12px;right:12px;z-index:5;border:0;border-radius:999px;padding:10px 14px;font:600 15px "Source Sans 3",sans-serif;
+html[lang="hr"] .en, html[lang="en"] .hr{display:none}
+.lang{position:fixed;top:12px;right:12px;z-index:6;display:flex;border-radius:999px;overflow:hidden;background:rgba(0,0,0,.45);backdrop-filter:blur(6px)}
+.lang button{border:0;background:transparent;color:#fff;font:600 14px "Source Sans 3",sans-serif;letter-spacing:.12em;padding:10px 14px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:#2f6b4f;color:#fff}
+.theme{position:fixed;top:12px;left:12px;z-index:5;border:0;border-radius:999px;padding:10px 14px;font:600 15px "Source Sans 3",sans-serif;
   background:rgba(0,0,0,.45);color:#fff;cursor:pointer;backdrop-filter:blur(6px)}
 @media (prefers-reduced-motion:no-preference){ .hero img{animation:drift 30s ease-in-out infinite alternate} }
 @keyframes drift{from{transform:scale(1.02)}to{transform:scale(1.08)}}
 </style>
 </head>
 <body>
-<button class="theme" id="theme" aria-label="Svijetla ili tamna tema">Tema</button>
+<button class="theme" id="theme" aria-label="Svijetla ili tamna tema / Light or dark"><span class="hr">Tema</span><span class="en">Theme</span></button>
+<div class="lang" role="group" aria-label="Jezik / Language">
+  <button type="button" data-lang="hr" aria-pressed="true">HR</button>
+  <button type="button" data-lang="en" aria-pressed="false">EN</button>
+</div>
 
 <header class="hero">
   <img src="images/01_hero.jpg" alt="Obnovljeni zeleni kontejner s električnim skuterima na otoku, uz more i kamene kuće">
   <div class="t">
-    <p class="kicker">Prijedlog za GreenerGo</p>
+    <p class="kicker"><span class="hr">Prijedlog za GreenerGo</span><span class="en">A proposal for GreenerGo</span></p>
     <h1>Green and Go<br>Croatian Islands</h1>
-    <p class="sub">Električni skuteri na hrvatskim otocima, iz obnovljenih brodskih kontejnera. Jedan kontejner na svakom otoku do kojeg se može doći autom.</p>
+    <p class="sub"><span class="hr">Električni skuteri na hrvatskim otocima, iz obnovljenih brodskih kontejnera. Jedan kontejner na svakom otoku do kojeg se može doći autom.</span><span class="en">Electric scooters on the Croatian islands, out of renovated shipping containers. One container on every island you can reach by car.</span></p>
   </div>
 </header>
 
 <main>
   <section class="letter">
-    <p class="hi">Ideja</p>
-    <p>Nekoliko starih brodskih kontejnera obnovi se i od svakog nastane mali ured za najam električnih skutera. Na svaki hrvatski otok do kojeg se može doći autom, trajektom ili preko mosta, u sezoni dođe po jedan takav kontejner. Ljudi unajme skuter i voze se po otoku bez buke i bez benzina.</p>
-    <p>Ime je Green and Go Croatian Islands. Na engleskom je jer ga turisti odmah razumiju.</p>
+    <p class="hi"><span class="hr">Ideja</span><span class="en">The idea</span></p>
+    <p><span class="hr">Nekoliko starih brodskih kontejnera obnovi se i od svakog nastane mali ured za najam električnih skutera. Na svaki hrvatski otok do kojeg se može doći autom, trajektom ili preko mosta, u sezoni dođe po jedan takav kontejner. Ljudi unajme skuter i voze se po otoku bez buke i bez benzina.</span><span class="en">A few old shipping containers are renovated and each one becomes a small office for renting electric scooters. Every Croatian island you can reach by car, on the ferry or over a bridge, gets one of these containers for the season. People rent a scooter and ride around the island with no noise and no petrol.</span></p>
+    <p><span class="hr">Ime je Green and Go Croatian Islands. Na engleskom je jer ga turisti odmah razumiju.</span><span class="en">The name is Green and Go Croatian Islands. It is in English because every tourist understands it straight away.</span></p>
   </section>
 
   <section>
-    <h2>Jedan kontejner radi četiri posla</h2>
-    <p>Kontejner je punionica, skladište za skutere i ured u isto vrijeme. Unutra ima klimu, pa osoba koja radi najam može cijeli dan sjediti u hladu, izdavati skutere i pratiti gdje se koji nalazi. Navečer se skuteri pune na utičnicama uz zid kontejnera i ujutro su spremni.</p>
-    <p>Zamisao je kontejner od 40 stopa s velikim prozorom kroz koji se izdaje skuter, tendom i malom drvenom terasom ispred. Solarni paneli na krovu bili bi lijep dodatak.</p>
+    <h2><span class="hr">Jedan kontejner radi četiri posla</span><span class="en">One container does four jobs</span></h2>
+    <p><span class="hr">Kontejner je punionica, skladište za skutere i ured u isto vrijeme. Unutra ima klimu, pa osoba koja radi najam može cijeli dan sjediti u hladu, izdavati skutere i pratiti gdje se koji nalazi. Navečer se skuteri pune na utičnicama uz zid kontejnera i ujutro su spremni.</span><span class="en">The container is a charging station, a store for the scooters and an office at the same time. It has air conditioning inside, so the person running the rental can sit in the cool all day, hand out scooters and see where each one is. In the evening the scooters charge on the sockets along the container wall and in the morning they are ready.</span></p>
+    <p><span class="hr">Zamisao je kontejner od 40 stopa s velikim prozorom kroz koji se izdaje skuter, tendom i malom drvenom terasom ispred. Solarni paneli na krovu bili bi lijep dodatak.</span><span class="en">The idea is a 40 foot container with a big window where the scooters are handed out, an awning and a small wooden deck in front. Solar panels on the roof would be a nice extra.</span></p>
     <figure>
       <img src="images/03_interior.jpg" alt="Unutrašnjost kontejnera: stol s laptopom, police s kacigama, punjači baterija i klima" loading="lazy">
-      <figcaption>Unutra su stol, klima, kacige i punjači za baterije.</figcaption>
+      <figcaption><span class="hr">Unutra su stol, klima, kacige i punjači za baterije.</span><span class="en">Inside there is a desk, the air conditioning, helmets and battery chargers.</span></figcaption>
     </figure>
   </section>
 
   <section>
-    <h2>Kamion, trajekt i utičnica</h2>
-    <p>Logistika je stvarno jednostavna. Kamion natovari kontejner, ukrca se na trajekt ili prijeđe most i spusti ga negdje gdje ima struje. Priključimo ga, skuteri se napune i najam može početi isti dan.</p>
-    <p>Kad sezona završi, kamion ga odveze natrag ili na drugo mjesto. Ne gradimo ništa, kontejner dođe i ode, a otok ostane kakav je bio.</p>
+    <h2><span class="hr">Kamion, trajekt i utičnica</span><span class="en">A truck, a ferry and a plug</span></h2>
+    <p><span class="hr">Logistika je stvarno jednostavna. Kamion natovari kontejner, ukrca se na trajekt ili prijeđe most i spusti ga negdje gdje ima struje. Priključimo ga, skuteri se napune i najam može početi isti dan.</span><span class="en">The logistics are really simple. A truck loads the container, drives onto the ferry or over the bridge and sets it down somewhere with electricity. We plug it in, the scooters charge and the rental can start the same day.</span></p>
+    <p><span class="hr">Kad sezona završi, kamion ga odveze natrag ili na drugo mjesto. Ne gradimo ništa, kontejner dođe i ode, a otok ostane kakav je bio.</span><span class="en">When the season ends the truck takes it back or somewhere else. We build nothing, the container comes and goes and the island stays as it was.</span></p>
     <figure>
       <img src="images/02_ferry.jpg" alt="Kamion sa zelenim kontejnerom silazi s trajekta na kameni mol malog otočkog mjesta" loading="lazy">
-      <figcaption>Kontejner putuje istim trajektom kao i turisti.</figcaption>
+      <figcaption><span class="hr">Kontejner putuje istim trajektom kao i turisti.</span><span class="en">The container travels on the same ferry as the tourists.</span></figcaption>
     </figure>
   </section>
 
   <section>
-    <h2>Jedan otok, jedan kontejner</h2>
-    <p>Mjerilo je jasno. Ako se na otok može doći autom, tamo ide jedan kontejner.</p>
+    <h2><span class="hr">Jedan otok, jedan kontejner</span><span class="en">One island, one container</span></h2>
+    <p><span class="hr">Mjerilo je jasno. Ako se na otok može doći autom, tamo ide jedan kontejner.</span><span class="en">The rule is clear. If you can get to the island by car, one container goes there.</span></p>
     <div class="islands">
-      <p><b>Preko mosta</b><br>Krk, Pag, Čiovo, Murter, Vir i Pašman</p>
-      <p style="margin:0"><b>Trajektom</b><br>Cres i Lošinj, Rab, Ugljan, Dugi otok, Iž, Brač, Hvar, Šolta, Vis, Korčula, Lastovo i Mljet</p>
+      <p><b><span class="hr">Preko mosta</span><span class="en">Over a bridge</span></b><br><span class="hr">Krk, Pag, Čiovo, Murter, Vir i Pašman</span><span class="en">Krk, Pag, Čiovo, Murter, Vir and Pašman</span></p>
+      <p style="margin:0"><b><span class="hr">Trajektom</span><span class="en">By car ferry</span></b><br><span class="hr">Cres i Lošinj, Rab, Ugljan, Dugi otok, Iž, Brač, Hvar, Šolta, Vis, Korčula, Lastovo i Mljet</span><span class="en">Cres and Lošinj, Rab, Ugljan, Dugi otok, Iž, Brač, Hvar, Šolta, Vis, Korčula, Lastovo and Mljet</span></p>
     </div>
-    <p>To je skoro dvadeset otoka uz cijelu obalu. Popis još treba provjeriti s trenutnim linijama Jadrolinije za aute.</p>
+    <p><span class="hr">To je skoro dvadeset otoka uz cijelu obalu. Popis još treba provjeriti s trenutnim linijama Jadrolinije za aute.</span><span class="en">That is almost twenty islands along the whole coast. The list still has to be checked against the current Jadrolinija car ferry lines.</span></p>
     <figure id="map">
       <img src="images/05_map.jpg" alt="Karta Jadrana sa zelenim kontejnerima na otocima i trajektnim linijama" loading="lazy">
     </figure>
   </section>
 
   <section>
-    <h2>Otok na dva kotača</h2>
-    <p>Glavna flota su električni skuteri na kojima se sjedi, jer se po otoku vozi otvorenom cestom od mjesta do mjesta. Romobili bi mogli doći kao dodatak za kratke vožnje po samom mjestu.</p>
-    <p>Svaki skuter ima GPS, pa u kontejneru znamo gdje je, koliko mu je baterije ostalo i je li netko zapeo na cesti. To je sigurnost za ljude i za flotu, a radi se po GDPR pravilima.</p>
-    <p>Za turista to znači da siđe s trajekta bez auta, uzme skuter i vidi otok onako kako ga mi poznajemo. Uvale i maslinike i ono malo selo gore u brdu do kojeg autobus ne ide.</p>
+    <h2><span class="hr">Otok na dva kotača</span><span class="en">The island on two wheels</span></h2>
+    <p><span class="hr">Glavna flota su električni skuteri na kojima se sjedi, jer se po otoku vozi otvorenom cestom od mjesta do mjesta. Romobili bi mogli doći kao dodatak za kratke vožnje po samom mjestu.</span><span class="en">The main fleet is seated electric scooters, because on an island you ride the open road from village to village. Kick scooters could come as an extra for short rides around town.</span></p>
+    <p><span class="hr">Svaki skuter ima GPS, pa u kontejneru znamo gdje je, koliko mu je baterije ostalo i je li netko zapeo na cesti. To je sigurnost za ljude i za flotu, a radi se po GDPR pravilima.</span><span class="en">Every scooter has GPS, so in the container we know where it is, how much battery it has left and whether someone is stuck on the road. That is safety for the people and for the fleet, and it is done under the GDPR rules.</span></p>
+    <p><span class="hr">Za turista to znači da siđe s trajekta bez auta, uzme skuter i vidi otok onako kako ga mi poznajemo. Uvale i maslinike i ono malo selo gore u brdu do kojeg autobus ne ide.</span><span class="en">For a tourist it means getting off the ferry without a car, taking a scooter and seeing the island the way we know it. The coves and the olive groves and that little village up on the hill where the bus does not go.</span></p>
     <figure id="ride">
       <img src="images/04_riders.jpg" alt="Dvoje ljudi vozi električne skutere obalnom cestom pokraj maslinika i suhozida" loading="lazy">
     </figure>
   </section>
 
   <section>
-    <h2>Zeleno i komercijalno u isto vrijeme</h2>
-    <p>Projekt se plaća s tri strane i zato može trajati godinama, a ne samo jedno ljeto.</p>
+    <h2><span class="hr">Zeleno i komercijalno u isto vrijeme</span><span class="en">Green and commercial at the same time</span></h2>
+    <p><span class="hr">Projekt se plaća s tri strane i zato može trajati godinama, a ne samo jedno ljeto.</span><span class="en">The project is paid for from three sides, and that is why it can last for years and not just one summer.</span></p>
     <div class="money">
-      <h3>Najam</h3>
-      <p>U sezoni su otoci puni ljudi koji bi rado ostavili auto i maknuli se od gužve. Najam skutera je prihod od prvog dana.</p>
+      <h3><span class="hr">Najam</span><span class="en">Rental</span></h3>
+      <p><span class="hr">U sezoni su otoci puni ljudi koji bi rado ostavili auto i maknuli se od gužve. Najam skutera je prihod od prvog dana.</span><span class="en">In the season the islands are full of people who would gladly leave the car and get away from the crowds. Scooter rental is income from the first day.</span></p>
     </div>
     <div class="money">
-      <h3>Sponzori</h3>
-      <p>Proizvođač skutera dobije svoje ime na kontejnerima i skuterima na skoro dvadeset otoka, pred stotinama tisuća turista svako ljeto. Zauzvrat mi dobijemo flotu besplatno ili puno jeftinije. Prvi na popisu su europski proizvođači Silence, Askoll, Vespa Elettrica, Govecs i Kumpan. Od domaćih su prirodni partneri Greyp, HEP s mrežom punionica ELEN, Jadrolinija čijim bi trajektima kontejneri putovali i Hrvatski Telekom za GPS vezu.</p>
+      <h3><span class="hr">Sponzori</span><span class="en">Sponsors</span></h3>
+      <p><span class="hr">Proizvođač skutera dobije svoje ime na kontejnerima i skuterima na skoro dvadeset otoka, pred stotinama tisuća turista svako ljeto. Zauzvrat mi dobijemo flotu besplatno ili puno jeftinije. Prvi na popisu su europski proizvođači Silence, Askoll, Vespa Elettrica, Govecs i Kumpan. Od domaćih su prirodni partneri Greyp, HEP s mrežom punionica ELEN, Jadrolinija čijim bi trajektima kontejneri putovali i Hrvatski Telekom za GPS vezu.</span><span class="en">A scooter maker gets its name on the containers and the scooters on almost twenty islands, in front of hundreds of thousands of tourists every summer. In return we get the fleet free or much cheaper. First on the list are the European makers Silence, Askoll, Vespa Elettrica, Govecs and Kumpan. The natural Croatian partners are Greyp, HEP with its ELEN charging network, Jadrolinija whose ferries the containers would travel on, and Hrvatski Telekom for the GPS connection.</span></p>
     </div>
     <div class="money">
-      <h3>Javni novac za manje CO2</h3>
-      <p>Fond za zaštitu okoliša i energetsku učinkovitost najavio je za ovu jesen poziv od oko 20 milijuna eura za energetski učinkovita vozila i male punionice. EU program LIFE svake godine ima poziv za klimu, pa bi 2027. bila realna godina za prijavu. Tu je i europska inicijativa Clean Energy for EU Islands, a Pokret otoka im je partner u Hrvatskoj i mogao bi nam otvoriti vrata. Treba još provjeriti tko se sve smije javiti na koji poziv.</p>
+      <h3><span class="hr">Javni novac za manje CO2</span><span class="en">Public money for less CO2</span></h3>
+      <p><span class="hr">Fond za zaštitu okoliša i energetsku učinkovitost najavio je za ovu jesen poziv od oko 20 milijuna eura za energetski učinkovita vozila i male punionice. EU program LIFE svake godine ima poziv za klimu, pa bi 2027. bila realna godina za prijavu. Tu je i europska inicijativa Clean Energy for EU Islands, a Pokret otoka im je partner u Hrvatskoj i mogao bi nam otvoriti vrata. Treba još provjeriti tko se sve smije javiti na koji poziv.</span><span class="en">The Croatian Environmental Protection and Energy Efficiency Fund has announced a call this autumn of about 20 million euro for energy efficient vehicles and small chargers. The EU LIFE programme has a climate call every year, so 2027 would be a realistic year to apply. There is also the European initiative Clean Energy for EU Islands, and Pokret otoka is its partner in Croatia and could open doors for us. Who may apply to which call still has to be checked.</span></p>
     </div>
     <figure id="sponsor">
       <img src="images/06_sponsor.jpg" alt="Bočni zid kontejnera s tri prazne ploče za sponzore i skuterima ispred" loading="lazy">
-      <figcaption>Prazne ploče čekaju sponzora.</figcaption>
+      <figcaption><span class="hr">Prazne ploče čekaju sponzora.</span><span class="en">The blank panels are waiting for a sponsor.</span></figcaption>
     </figure>
   </section>
 
   <section>
-    <h2>Prvi korak</h2>
-    <p>Početak je jedan kontejner na jednom otoku, da se vidi kako to radi u stvarnosti prije nego se krene dalje. Prirodan prvi otok je Ugljan, Kukljica, gdje poznajemo teren i ljude koji bi pomogli.</p>
-    <p>Prvo bi trebalo naći rabljeni kontejner i mjesto sa strujom, razgovarati s općinom i pitati jednog proizvođača bi li nam dao skutere za probnu sezonu. Ako to ljeto prođe dobro, sljedeće godine kontejneri idu na više otoka.</p>
+    <h2><span class="hr">Prvi korak</span><span class="en">The first step</span></h2>
+    <p><span class="hr">Početak je jedan kontejner na jednom otoku, da se vidi kako to radi u stvarnosti prije nego se krene dalje. Prirodan prvi otok je Ugljan, Kukljica, gdje poznajemo teren i ljude koji bi pomogli.</span><span class="en">The start is one container on one island, to see how it works in real life before going further. The natural first island is Ugljan, Kukljica, where we know the ground and the people who would help.</span></p>
+    <p><span class="hr">Prvo bi trebalo naći rabljeni kontejner i mjesto sa strujom, razgovarati s općinom i pitati jednog proizvođača bi li nam dao skutere za probnu sezonu. Ako to ljeto prođe dobro, sljedeće godine kontejneri idu na više otoka.</span><span class="en">First we need a used container and a spot with electricity, a talk with the municipality, and one maker willing to lend scooters for a trial season. If that summer goes well, the next year the containers go to more islands.</span></p>
   </section>
 
   <section>
     <figure id="evening" style="margin-top:0">
       <img src="images/07_evening.jpg" alt="Kontejner navečer, svjetla u prozoru i skuteri na punjenju uz zalazak sunca" loading="lazy">
     </figure>
-    <p>Na kraju dana skuteri se pune, a kontejner čeka sljedeće jutro.</p>
+    <p><span class="hr">Na kraju dana skuteri se pune, a kontejner čeka sljedeće jutro.</span><span class="en">At the end of the day the scooters charge and the container waits for the next morning.</span></p>
   </section>
 </main>
 
 <footer>
   Marko Boško, Mantra Productions<br>
   <a href="mailto:marko.bosko@auroville.community">marko.bosko@auroville.community</a><br>
-  <span class="note">Brojke o fondovima su iz javnih objava iz 2026. Popis otoka i sponzora je prijedlog i još se provjerava. Slike su ilustracije.</span>
+  <span class="note"><span class="hr">Brojke o fondovima su iz javnih objava iz 2026. Popis otoka i sponzora je prijedlog i još se provjerava. Slike su ilustracije.</span><span class="en">The fund figures come from public announcements in 2026. The island and sponsor lists are a proposal and are still being checked. The images are illustrations.</span></span>
 </footer>
 
 <script>
 (function(){
   var r=document.documentElement,b=document.getElementById('theme');
+  function setLang(l,save){
+    r.lang=l;
+    document.querySelectorAll('.lang button').forEach(function(x){x.setAttribute('aria-pressed',x.dataset.lang===l?'true':'false');});
+    if(save){try{localStorage.setItem('mantra_lang',l);}catch(e){} try{document.cookie='mantra_lang='+l+';path=/;max-age=31536000;SameSite=Lax';}catch(e){}}
+  }
+  var L=null; try{L=localStorage.getItem('mantra_lang');}catch(e){}
+  if(L!=='hr'&&L!=='en'){var m=document.cookie.match(/(?:^|;\s*)mantra_lang=(hr|en)/); L=m?m[1]:'hr';}
+  setLang(L,false);
+  document.querySelectorAll('.lang button').forEach(function(x){x.addEventListener('click',function(){setLang(x.dataset.lang,true);});});
   try{var s=localStorage.getItem('gg-theme'); if(s) r.setAttribute('data-theme',s);}catch(e){}
   b.addEventListener('click',function(){
     var dark=r.getAttribute('data-theme')?r.getAttribute('data-theme')==='dark':matchMedia('(prefers-color-scheme: dark)').matches;
@@ -181,7 +198,7 @@ footer a{color:var(--sea)}
   document.querySelectorAll('figure img').forEach(function(i){
     i.addEventListener('error',function(){
       var d=document.createElement('div'); d.className='ph';
-      d.textContent='Slika '+i.getAttribute('src').split('/').pop()+' dolazi uskoro';
+      d.textContent=(r.lang==='en'?'Image ':'Slika ')+i.getAttribute('src').split('/').pop()+' dolazi uskoro';
       i.replaceWith(d);
     });
   });
